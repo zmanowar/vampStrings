@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node main.js"
+    "start": "jscodeshift -t src/start.ts --extensions=ts ./main.bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "escodegen": "^2.0.0",
-    "esprima": "^4.0.1",
-    "js-beautify": "^1.14.0"
+    "jscodeshift": "^0.13.1"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "^0.11.3",
+    "@types/node": "^17.0.21"
   }
 }
